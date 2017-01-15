@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestAll]">
+  <test name="Login Test(failed)">
+    <classes>
+      <class name="com.zohotesting.DeleteLead">
+        <methods>
+          <include name="after"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.zohotesting.DeleteLead -->
+      <class name="com.zohotesting.CreateLeadTest">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- com.zohotesting.CreateLeadTest -->
+      <class name="com.zohotesting.TestLogin">
+        <methods>
+          <include name="dologin" invocation-numbers="0 1"/>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- com.zohotesting.TestLogin -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+  <test name="Create Lead Test(failed)">
+    <classes>
+      <class name="com.zohotesting.DeleteLead">
+        <methods>
+          <include name="after"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.zohotesting.DeleteLead -->
+      <class name="com.zohotesting.CreateLeadTest">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+          <include name="doCreateLead" invocation-numbers="3"/>
+        </methods>
+      </class> <!-- com.zohotesting.CreateLeadTest -->
+      <class name="com.zohotesting.TestLogin">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- com.zohotesting.TestLogin -->
+    </classes>
+  </test> <!-- Create Lead Test(failed) -->
+  <test name="Delete Lead(failed)">
+    <classes>
+      <class name="com.zohotesting.DeleteLead">
+        <methods>
+          <include name="after"/>
+          <include name="TestLeadDelete" invocation-numbers="0 1 2"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.zohotesting.DeleteLead -->
+      <class name="com.zohotesting.CreateLeadTest">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- com.zohotesting.CreateLeadTest -->
+      <class name="com.zohotesting.TestLogin">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- com.zohotesting.TestLogin -->
+    </classes>
+  </test> <!-- Delete Lead(failed) -->
+</suite> <!-- Failed suite [TestAll] -->

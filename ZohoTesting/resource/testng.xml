@@ -1,0 +1,20 @@
+<suite name="TestAll">
+
+<test name = "Login Test" allow-return-values="true">
+  <classes>
+     <class name = "com.zohotesting.TestLogin"/>
+  </classes>
+  </test>
+  
+  <test name = "Create Lead Test" allow-return-values="true">
+  <classes>
+     <class name = "com.zohotesting.CreateLeadTest"/>
+  </classes>
+  </test>
+  
+    <test name = "Delete Lead" allow-return-values="true">
+  	<classes>
+     <class name = "com.zohotesting.DeleteLead"/>
+  	</classes>
+  </test>
+</suite>
