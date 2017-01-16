@@ -74,7 +74,7 @@
 
     <!-- run -->
     <target name="run" depends="compile">
-        <testng classpath="${test.classpath}:${test.dest}" suitename="TestSUITE1">	
+        <testng classpath="${test.classpath}:${test.dest}" suitename="TestSUITE">	
             <xmlfileset dir="${ws.home}" includes="testng.xml"/>
         </testng>
         <!--
